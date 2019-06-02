@@ -1,0 +1,1074 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C52975EC5107B68F9FE0318 /* Pods_MeuMetro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7056C82B6BFF0A9BA6022F8D /* Pods_MeuMetro.framework */; };
+		157F6489229DB6BC00DADC4C /* StatusLineOfficialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F6487229DB6BC00DADC4C /* StatusLineOfficialCell.swift */; };
+		157F648A229DB6BC00DADC4C /* StatusLineOfficialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157F6488229DB6BC00DADC4C /* StatusLineOfficialCell.xib */; };
+		157F648D229EEBCE00DADC4C /* StatusLineOfficialPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F648C229EEBCE00DADC4C /* StatusLineOfficialPresenter.swift */; };
+		157F6490229EEC7500DADC4C /* StatusLineOfficialProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F648F229EEC7500DADC4C /* StatusLineOfficialProtocols.swift */; };
+		157F6496229F221E00DADC4C /* NibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F6495229F221E00DADC4C /* NibReusable.swift */; };
+		157F6499229F289E00DADC4C /* LineDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F6498229F289E00DADC4C /* LineDecodable.swift */; };
+		157F649D229F3A1900DADC4C /* StatusLineOfficialRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F649C229F3A1900DADC4C /* StatusLineOfficialRemoteDataManager.swift */; };
+		157F64A422A0206D00DADC4C /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64A322A0206D00DADC4C /* RequestManager.swift */; };
+		157F64A722A020E400DADC4C /* RequestManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64A622A020E400DADC4C /* RequestManagerProtocol.swift */; };
+		157F64AA22A0212F00DADC4C /* APIControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64A922A0212F00DADC4C /* APIControllerProtocol.swift */; };
+		157F64AD22A0222200DADC4C /* RequestManagerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64AC22A0222200DADC4C /* RequestManagerConfig.swift */; };
+		157F64AF22A0225F00DADC4C /* NetworkDebugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64AE22A0225F00DADC4C /* NetworkDebugManager.swift */; };
+		157F64B222A022F000DADC4C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64B122A022F000DADC4C /* Endpoint.swift */; };
+		157F64B622A02FCE00DADC4C /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64B522A02FCE00DADC4C /* ErrorParser.swift */; };
+		157F64B822A0300E00DADC4C /* BaseAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64B722A0300E00DADC4C /* BaseAPIController.swift */; };
+		157F64BA22A035E100DADC4C /* Encodable+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64B922A035E100DADC4C /* Encodable+Parameters.swift */; };
+		157F64BD22A04FFC00DADC4C /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64BC22A04FFC00DADC4C /* ServiceApi.swift */; };
+		157F64BF22A0503500DADC4C /* ServicePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64BE22A0503500DADC4C /* ServicePort.swift */; };
+		157F64C122A0505C00DADC4C /* ServiceVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64C022A0505C00DADC4C /* ServiceVersion.swift */; };
+		157F64C422A0518100DADC4C /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64C322A0518100DADC4C /* String+Regex.swift */; };
+		157F64C822A05F4700DADC4C /* StatusLineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64C722A05F4700DADC4C /* StatusLineService.swift */; };
+		157F64CA22A05F7300DADC4C /* StatusLineServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64C922A05F7300DADC4C /* StatusLineServiceProtocol.swift */; };
+		157F64CF22A0664D00DADC4C /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64CE22A0664D00DADC4C /* APIController.swift */; };
+		157F64D122A0683800DADC4C /* APIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64D022A0683800DADC4C /* APIRequestAdapter.swift */; };
+		157F64D522A071AC00DADC4C /* DataRequest+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64D422A071AC00DADC4C /* DataRequest+RxSwift.swift */; };
+		157F64D822A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64D722A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift */; };
+		157F64DD22A19C5A00DADC4C /* NetworkSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64DC22A19C5A00DADC4C /* NetworkSetup.swift */; };
+		157F64DF22A19C8E00DADC4C /* AppDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64DE22A19C8E00DADC4C /* AppDateFormatter.swift */; };
+		15BF5C63229CA2B500DDAD6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF5C62229CA2B500DDAD6E /* AppDelegate.swift */; };
+		15BF5C65229CA2B500DDAD6E /* StatusLineOfficialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF5C64229CA2B500DDAD6E /* StatusLineOfficialViewController.swift */; };
+		15BF5C68229CA2B500DDAD6E /* StatusLineOfficial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BF5C66229CA2B500DDAD6E /* StatusLineOfficial.storyboard */; };
+		15BF5C6A229CA2B600DDAD6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BF5C69229CA2B600DDAD6E /* Assets.xcassets */; };
+		15BF5C6D229CA2B600DDAD6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BF5C6B229CA2B600DDAD6E /* LaunchScreen.storyboard */; };
+		15BF5C78229CA2B700DDAD6E /* MeuMetroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF5C77229CA2B700DDAD6E /* MeuMetroTests.swift */; };
+		15BF5C83229CA2B700DDAD6E /* MeuMetroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF5C82229CA2B700DDAD6E /* MeuMetroUITests.swift */; };
+		6A02B863C1F1789BFBF778CB /* Pods_MeuMetroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7003B51E1A10C4A4A691B2 /* Pods_MeuMetroTests.framework */; };
+		B67DEF1B22A47A580054BF2E /* StatusLineOfficialInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DEF1A22A47A580054BF2E /* StatusLineOfficialInteractor.swift */; };
+		B689B93D22A44778008971A4 /* StatusLineOfficialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689B93C22A44778008971A4 /* StatusLineOfficialRouter.swift */; };
+		B689B94222A44865008971A4 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689B94122A44865008971A4 /* Storyboarded.swift */; };
+		B689B94522A44B1F008971A4 /* UIStoryboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689B94422A44B1F008971A4 /* UIStoryboard+Instantiate.swift */; };
+		C731F53C8D8902DE23AD56CF /* Pods_MeuMetroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581E76DF0CEE54AA89A8F655 /* Pods_MeuMetroUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15BF5C74229CA2B700DDAD6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15BF5C57229CA2B500DDAD6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15BF5C5E229CA2B500DDAD6E;
+			remoteInfo = MeuMetro;
+		};
+		15BF5C7F229CA2B700DDAD6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15BF5C57229CA2B500DDAD6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15BF5C5E229CA2B500DDAD6E;
+			remoteInfo = MeuMetro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A7003B51E1A10C4A4A691B2 /* Pods_MeuMetroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuMetroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		157F6487229DB6BC00DADC4C /* StatusLineOfficialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineOfficialCell.swift; sourceTree = "<group>"; };
+		157F6488229DB6BC00DADC4C /* StatusLineOfficialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusLineOfficialCell.xib; sourceTree = "<group>"; };
+		157F648C229EEBCE00DADC4C /* StatusLineOfficialPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineOfficialPresenter.swift; sourceTree = "<group>"; };
+		157F648F229EEC7500DADC4C /* StatusLineOfficialProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineOfficialProtocols.swift; sourceTree = "<group>"; };
+		157F6495229F221E00DADC4C /* NibReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibReusable.swift; sourceTree = "<group>"; };
+		157F6498229F289E00DADC4C /* LineDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDecodable.swift; sourceTree = "<group>"; };
+		157F649C229F3A1900DADC4C /* StatusLineOfficialRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineOfficialRemoteDataManager.swift; sourceTree = "<group>"; };
+		157F64A322A0206D00DADC4C /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		157F64A622A020E400DADC4C /* RequestManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerProtocol.swift; sourceTree = "<group>"; };
+		157F64A922A0212F00DADC4C /* APIControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIControllerProtocol.swift; sourceTree = "<group>"; };
+		157F64AC22A0222200DADC4C /* RequestManagerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerConfig.swift; sourceTree = "<group>"; };
+		157F64AE22A0225F00DADC4C /* NetworkDebugManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebugManager.swift; sourceTree = "<group>"; };
+		157F64B122A022F000DADC4C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		157F64B522A02FCE00DADC4C /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
+		157F64B722A0300E00DADC4C /* BaseAPIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIController.swift; sourceTree = "<group>"; };
+		157F64B922A035E100DADC4C /* Encodable+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Parameters.swift"; sourceTree = "<group>"; };
+		157F64BC22A04FFC00DADC4C /* ServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
+		157F64BE22A0503500DADC4C /* ServicePort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePort.swift; sourceTree = "<group>"; };
+		157F64C022A0505C00DADC4C /* ServiceVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceVersion.swift; sourceTree = "<group>"; };
+		157F64C322A0518100DADC4C /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		157F64C722A05F4700DADC4C /* StatusLineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineService.swift; sourceTree = "<group>"; };
+		157F64C922A05F7300DADC4C /* StatusLineServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineServiceProtocol.swift; sourceTree = "<group>"; };
+		157F64CE22A0664D00DADC4C /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		157F64D022A0683800DADC4C /* APIRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestAdapter.swift; sourceTree = "<group>"; };
+		157F64D422A071AC00DADC4C /* DataRequest+RxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+RxSwift.swift"; sourceTree = "<group>"; };
+		157F64D722A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequenceType+IgnoreElements.swift"; sourceTree = "<group>"; };
+		157F64DC22A19C5A00DADC4C /* NetworkSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSetup.swift; sourceTree = "<group>"; };
+		157F64DE22A19C8E00DADC4C /* AppDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDateFormatter.swift; sourceTree = "<group>"; };
+		15BF5C5F229CA2B500DDAD6E /* MeuMetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuMetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BF5C62229CA2B500DDAD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15BF5C64229CA2B500DDAD6E /* StatusLineOfficialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineOfficialViewController.swift; sourceTree = "<group>"; };
+		15BF5C67229CA2B500DDAD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StatusLineOfficial.storyboard; sourceTree = "<group>"; };
+		15BF5C69229CA2B600DDAD6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15BF5C6C229CA2B600DDAD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15BF5C6E229CA2B600DDAD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15BF5C73229CA2B700DDAD6E /* MeuMetroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuMetroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BF5C77229CA2B700DDAD6E /* MeuMetroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuMetroTests.swift; sourceTree = "<group>"; };
+		15BF5C79229CA2B700DDAD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15BF5C7E229CA2B700DDAD6E /* MeuMetroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuMetroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BF5C82229CA2B700DDAD6E /* MeuMetroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuMetroUITests.swift; sourceTree = "<group>"; };
+		15BF5C84229CA2B700DDAD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2714434C4C3B78E30047DDC1 /* Pods-MeuMetroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuMetroUITests.release.xcconfig"; path = "Target Support Files/Pods-MeuMetroUITests/Pods-MeuMetroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		581E76DF0CEE54AA89A8F655 /* Pods_MeuMetroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuMetroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6965B52B57BC24C0F9AEDF48 /* Pods-MeuMetro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuMetro.debug.xcconfig"; path = "Target Support Files/Pods-MeuMetro/Pods-MeuMetro.debug.xcconfig"; sourceTree = "<group>"; };
+		7056C82B6BFF0A9BA6022F8D /* Pods_MeuMetro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuMetro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74A938F17C3AD03514C2999F /* Pods-MeuMetroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuMetroTests.debug.xcconfig"; path = "Target Support Files/Pods-MeuMetroTests/Pods-MeuMetroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B660E21691FEEF5BE1F2CAB6 /* Pods-MeuMetro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuMetro.release.xcconfig"; path = "Target Support Files/Pods-MeuMetro/Pods-MeuMetro.release.xcconfig"; sourceTree = "<group>"; };
+		B67DEF1A22A47A580054BF2E /* StatusLineOfficialInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineOfficialInteractor.swift; sourceTree = "<group>"; };
+		B689B93C22A44778008971A4 /* StatusLineOfficialRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineOfficialRouter.swift; sourceTree = "<group>"; };
+		B689B94122A44865008971A4 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		B689B94422A44B1F008971A4 /* UIStoryboard+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instantiate.swift"; sourceTree = "<group>"; };
+		D17FA7252C7289C7D74F4A93 /* Pods-MeuMetroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuMetroUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeuMetroUITests/Pods-MeuMetroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6CAF4EE6F3993ECE53B02C7 /* Pods-MeuMetroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuMetroTests.release.xcconfig"; path = "Target Support Files/Pods-MeuMetroTests/Pods-MeuMetroTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15BF5C5C229CA2B500DDAD6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C52975EC5107B68F9FE0318 /* Pods_MeuMetro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BF5C70229CA2B700DDAD6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A02B863C1F1789BFBF778CB /* Pods_MeuMetroTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BF5C7B229CA2B700DDAD6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C731F53C8D8902DE23AD56CF /* Pods_MeuMetroUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157F6480229D876200DADC4C /* StatusLineOfficial */ = {
+			isa = PBXGroup;
+			children = (
+				B689B94722A479E4008971A4 /* Interactor */,
+				B689B93B22A4475C008971A4 /* Router */,
+				157F649A229F39C600DADC4C /* DataManagers */,
+				157F648E229EEC4B00DADC4C /* Protocols */,
+				157F648B229EEBB300DADC4C /* Presenter */,
+				157F6481229D879100DADC4C /* View */,
+			);
+			path = StatusLineOfficial;
+			sourceTree = "<group>";
+		};
+		157F6481229D879100DADC4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				157F6482229D87B600DADC4C /* Cell */,
+				15BF5C66229CA2B500DDAD6E /* StatusLineOfficial.storyboard */,
+				15BF5C64229CA2B500DDAD6E /* StatusLineOfficialViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		157F6482229D87B600DADC4C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				157F6487229DB6BC00DADC4C /* StatusLineOfficialCell.swift */,
+				157F6488229DB6BC00DADC4C /* StatusLineOfficialCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		157F648B229EEBB300DADC4C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				157F648C229EEBCE00DADC4C /* StatusLineOfficialPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		157F648E229EEC4B00DADC4C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				157F648F229EEC7500DADC4C /* StatusLineOfficialProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		157F6491229F092900DADC4C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				157F64C522A05EE700DADC4C /* Services */,
+				157F64CB22A0660600DADC4C /* Config */,
+				157F6497229F287600DADC4C /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		157F6492229F094A00DADC4C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				157F6480229D876200DADC4C /* StatusLineOfficial */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		157F6493229F09AC00DADC4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		157F6494229F21FA00DADC4C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				157F6495229F221E00DADC4C /* NibReusable.swift */,
+				B689B94122A44865008971A4 /* Storyboarded.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		157F6497229F287600DADC4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				157F6498229F289E00DADC4C /* LineDecodable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		157F649A229F39C600DADC4C /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				157F649B229F39EE00DADC4C /* Remote */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		157F649B229F39EE00DADC4C /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				157F649C229F3A1900DADC4C /* StatusLineOfficialRemoteDataManager.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		157F64A122A0202200DADC4C /* NetworkLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				157F64BB22A035ED00DADC4C /* Extensions */,
+				157F64AB22A0221300DADC4C /* Models */,
+				157F64A522A020BE00DADC4C /* Protocols */,
+				157F64A222A0204F00DADC4C /* Managers */,
+			);
+			path = NetworkLibrary;
+			sourceTree = "<group>";
+		};
+		157F64A222A0204F00DADC4C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				157F64A322A0206D00DADC4C /* RequestManager.swift */,
+				157F64AE22A0225F00DADC4C /* NetworkDebugManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		157F64A522A020BE00DADC4C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				157F64A622A020E400DADC4C /* RequestManagerProtocol.swift */,
+				157F64A922A0212F00DADC4C /* APIControllerProtocol.swift */,
+				157F64B522A02FCE00DADC4C /* ErrorParser.swift */,
+				157F64BC22A04FFC00DADC4C /* ServiceApi.swift */,
+				157F64BE22A0503500DADC4C /* ServicePort.swift */,
+				157F64C022A0505C00DADC4C /* ServiceVersion.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		157F64AB22A0221300DADC4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				157F64AC22A0222200DADC4C /* RequestManagerConfig.swift */,
+				157F64B122A022F000DADC4C /* Endpoint.swift */,
+				157F64B722A0300E00DADC4C /* BaseAPIController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		157F64BB22A035ED00DADC4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				157F64B922A035E100DADC4C /* Encodable+Parameters.swift */,
+				157F64D422A071AC00DADC4C /* DataRequest+RxSwift.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		157F64C222A0515B00DADC4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B689B94322A44B11008971A4 /* UIKit */,
+				157F64D622A0743E00DADC4C /* RxSwift */,
+				157F64C322A0518100DADC4C /* String+Regex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		157F64C522A05EE700DADC4C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				157F64C622A05EF500DADC4C /* StatusLine */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		157F64C622A05EF500DADC4C /* StatusLine */ = {
+			isa = PBXGroup;
+			children = (
+				157F64C722A05F4700DADC4C /* StatusLineService.swift */,
+				157F64C922A05F7300DADC4C /* StatusLineServiceProtocol.swift */,
+			);
+			path = StatusLine;
+			sourceTree = "<group>";
+		};
+		157F64CB22A0660600DADC4C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				157F64CE22A0664D00DADC4C /* APIController.swift */,
+				157F64D022A0683800DADC4C /* APIRequestAdapter.swift */,
+				157F64DC22A19C5A00DADC4C /* NetworkSetup.swift */,
+				157F64DE22A19C8E00DADC4C /* AppDateFormatter.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		157F64D622A0743E00DADC4C /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				157F64D722A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		157F64D922A19AC100DADC4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15BF5C6B229CA2B600DDAD6E /* LaunchScreen.storyboard */,
+				15BF5C62229CA2B500DDAD6E /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15BF5C56229CA2B500DDAD6E = {
+			isa = PBXGroup;
+			children = (
+				15BF5C61229CA2B500DDAD6E /* MeuMetro */,
+				15BF5C76229CA2B700DDAD6E /* MeuMetroTests */,
+				15BF5C81229CA2B700DDAD6E /* MeuMetroUITests */,
+				15BF5C60229CA2B500DDAD6E /* Products */,
+				4F3F557FDE4C0D79F7AB1CC3 /* Pods */,
+				A2DD1FFA8675BB9E29A9F3D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15BF5C60229CA2B500DDAD6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15BF5C5F229CA2B500DDAD6E /* MeuMetro.app */,
+				15BF5C73229CA2B700DDAD6E /* MeuMetroTests.xctest */,
+				15BF5C7E229CA2B700DDAD6E /* MeuMetroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15BF5C61229CA2B500DDAD6E /* MeuMetro */ = {
+			isa = PBXGroup;
+			children = (
+				15BF5C6E229CA2B600DDAD6E /* Info.plist */,
+				157F64D922A19AC100DADC4C /* Supporting Files */,
+				157F64C222A0515B00DADC4C /* Extensions */,
+				157F64A122A0202200DADC4C /* NetworkLibrary */,
+				157F6494229F21FA00DADC4C /* Utils */,
+				157F6493229F09AC00DADC4C /* Models */,
+				157F6492229F094A00DADC4C /* Modules */,
+				157F6491229F092900DADC4C /* Network */,
+				15BF5C69229CA2B600DDAD6E /* Assets.xcassets */,
+			);
+			path = MeuMetro;
+			sourceTree = "<group>";
+		};
+		15BF5C76229CA2B700DDAD6E /* MeuMetroTests */ = {
+			isa = PBXGroup;
+			children = (
+				15BF5C77229CA2B700DDAD6E /* MeuMetroTests.swift */,
+				15BF5C79229CA2B700DDAD6E /* Info.plist */,
+			);
+			path = MeuMetroTests;
+			sourceTree = "<group>";
+		};
+		15BF5C81229CA2B700DDAD6E /* MeuMetroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15BF5C82229CA2B700DDAD6E /* MeuMetroUITests.swift */,
+				15BF5C84229CA2B700DDAD6E /* Info.plist */,
+			);
+			path = MeuMetroUITests;
+			sourceTree = "<group>";
+		};
+		4F3F557FDE4C0D79F7AB1CC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6965B52B57BC24C0F9AEDF48 /* Pods-MeuMetro.debug.xcconfig */,
+				B660E21691FEEF5BE1F2CAB6 /* Pods-MeuMetro.release.xcconfig */,
+				74A938F17C3AD03514C2999F /* Pods-MeuMetroTests.debug.xcconfig */,
+				D6CAF4EE6F3993ECE53B02C7 /* Pods-MeuMetroTests.release.xcconfig */,
+				D17FA7252C7289C7D74F4A93 /* Pods-MeuMetroUITests.debug.xcconfig */,
+				2714434C4C3B78E30047DDC1 /* Pods-MeuMetroUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2DD1FFA8675BB9E29A9F3D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7056C82B6BFF0A9BA6022F8D /* Pods_MeuMetro.framework */,
+				0A7003B51E1A10C4A4A691B2 /* Pods_MeuMetroTests.framework */,
+				581E76DF0CEE54AA89A8F655 /* Pods_MeuMetroUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B689B93B22A4475C008971A4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B689B93C22A44778008971A4 /* StatusLineOfficialRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B689B94322A44B11008971A4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B689B94422A44B1F008971A4 /* UIStoryboard+Instantiate.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B689B94722A479E4008971A4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B67DEF1A22A47A580054BF2E /* StatusLineOfficialInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15BF5C5E229CA2B500DDAD6E /* MeuMetro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BF5C87229CA2B700DDAD6E /* Build configuration list for PBXNativeTarget "MeuMetro" */;
+			buildPhases = (
+				898187339A134707083281BB /* [CP] Check Pods Manifest.lock */,
+				15BF5C5B229CA2B500DDAD6E /* Sources */,
+				15BF5C5C229CA2B500DDAD6E /* Frameworks */,
+				15BF5C5D229CA2B500DDAD6E /* Resources */,
+				9BA3FC60C78085E3F127B7A5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeuMetro;
+			productName = MeuMetro;
+			productReference = 15BF5C5F229CA2B500DDAD6E /* MeuMetro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15BF5C72229CA2B700DDAD6E /* MeuMetroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BF5C8A229CA2B700DDAD6E /* Build configuration list for PBXNativeTarget "MeuMetroTests" */;
+			buildPhases = (
+				CA1101F0D093BCB5158A7D53 /* [CP] Check Pods Manifest.lock */,
+				15BF5C6F229CA2B700DDAD6E /* Sources */,
+				15BF5C70229CA2B700DDAD6E /* Frameworks */,
+				15BF5C71229CA2B700DDAD6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15BF5C75229CA2B700DDAD6E /* PBXTargetDependency */,
+			);
+			name = MeuMetroTests;
+			productName = MeuMetroTests;
+			productReference = 15BF5C73229CA2B700DDAD6E /* MeuMetroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15BF5C7D229CA2B700DDAD6E /* MeuMetroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BF5C8D229CA2B700DDAD6E /* Build configuration list for PBXNativeTarget "MeuMetroUITests" */;
+			buildPhases = (
+				C7388F56740D5E1B99BAE357 /* [CP] Check Pods Manifest.lock */,
+				15BF5C7A229CA2B700DDAD6E /* Sources */,
+				15BF5C7B229CA2B700DDAD6E /* Frameworks */,
+				15BF5C7C229CA2B700DDAD6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15BF5C80229CA2B700DDAD6E /* PBXTargetDependency */,
+			);
+			name = MeuMetroUITests;
+			productName = MeuMetroUITests;
+			productReference = 15BF5C7E229CA2B700DDAD6E /* MeuMetroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15BF5C57229CA2B500DDAD6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "meu metro";
+				TargetAttributes = {
+					15BF5C5E229CA2B500DDAD6E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					15BF5C72229CA2B700DDAD6E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 15BF5C5E229CA2B500DDAD6E;
+					};
+					15BF5C7D229CA2B700DDAD6E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 15BF5C5E229CA2B500DDAD6E;
+					};
+				};
+			};
+			buildConfigurationList = 15BF5C5A229CA2B500DDAD6E /* Build configuration list for PBXProject "MeuMetro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15BF5C56229CA2B500DDAD6E;
+			productRefGroup = 15BF5C60229CA2B500DDAD6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15BF5C5E229CA2B500DDAD6E /* MeuMetro */,
+				15BF5C72229CA2B700DDAD6E /* MeuMetroTests */,
+				15BF5C7D229CA2B700DDAD6E /* MeuMetroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15BF5C5D229CA2B500DDAD6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157F648A229DB6BC00DADC4C /* StatusLineOfficialCell.xib in Resources */,
+				15BF5C6D229CA2B600DDAD6E /* LaunchScreen.storyboard in Resources */,
+				15BF5C6A229CA2B600DDAD6E /* Assets.xcassets in Resources */,
+				15BF5C68229CA2B500DDAD6E /* StatusLineOfficial.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BF5C71229CA2B700DDAD6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BF5C7C229CA2B700DDAD6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		898187339A134707083281BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeuMetro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BA3FC60C78085E3F127B7A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeuMetro/Pods-MeuMetro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeuMetro/Pods-MeuMetro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7388F56740D5E1B99BAE357 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeuMetroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1101F0D093BCB5158A7D53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeuMetroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15BF5C5B229CA2B500DDAD6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157F64B222A022F000DADC4C /* Endpoint.swift in Sources */,
+				157F6496229F221E00DADC4C /* NibReusable.swift in Sources */,
+				157F6499229F289E00DADC4C /* LineDecodable.swift in Sources */,
+				15BF5C65229CA2B500DDAD6E /* StatusLineOfficialViewController.swift in Sources */,
+				157F64AA22A0212F00DADC4C /* APIControllerProtocol.swift in Sources */,
+				157F6489229DB6BC00DADC4C /* StatusLineOfficialCell.swift in Sources */,
+				15BF5C63229CA2B500DDAD6E /* AppDelegate.swift in Sources */,
+				B689B93D22A44778008971A4 /* StatusLineOfficialRouter.swift in Sources */,
+				157F64BA22A035E100DADC4C /* Encodable+Parameters.swift in Sources */,
+				157F64D822A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift in Sources */,
+				157F64BD22A04FFC00DADC4C /* ServiceApi.swift in Sources */,
+				157F64CA22A05F7300DADC4C /* StatusLineServiceProtocol.swift in Sources */,
+				157F6490229EEC7500DADC4C /* StatusLineOfficialProtocols.swift in Sources */,
+				157F64AD22A0222200DADC4C /* RequestManagerConfig.swift in Sources */,
+				157F64C822A05F4700DADC4C /* StatusLineService.swift in Sources */,
+				B689B94522A44B1F008971A4 /* UIStoryboard+Instantiate.swift in Sources */,
+				157F64BF22A0503500DADC4C /* ServicePort.swift in Sources */,
+				157F64CF22A0664D00DADC4C /* APIController.swift in Sources */,
+				157F64A422A0206D00DADC4C /* RequestManager.swift in Sources */,
+				157F64B622A02FCE00DADC4C /* ErrorParser.swift in Sources */,
+				157F64D522A071AC00DADC4C /* DataRequest+RxSwift.swift in Sources */,
+				157F64C422A0518100DADC4C /* String+Regex.swift in Sources */,
+				157F64C122A0505C00DADC4C /* ServiceVersion.swift in Sources */,
+				157F64B822A0300E00DADC4C /* BaseAPIController.swift in Sources */,
+				157F649D229F3A1900DADC4C /* StatusLineOfficialRemoteDataManager.swift in Sources */,
+				B689B94222A44865008971A4 /* Storyboarded.swift in Sources */,
+				157F64D122A0683800DADC4C /* APIRequestAdapter.swift in Sources */,
+				157F64DD22A19C5A00DADC4C /* NetworkSetup.swift in Sources */,
+				157F64AF22A0225F00DADC4C /* NetworkDebugManager.swift in Sources */,
+				157F648D229EEBCE00DADC4C /* StatusLineOfficialPresenter.swift in Sources */,
+				157F64DF22A19C8E00DADC4C /* AppDateFormatter.swift in Sources */,
+				157F64A722A020E400DADC4C /* RequestManagerProtocol.swift in Sources */,
+				B67DEF1B22A47A580054BF2E /* StatusLineOfficialInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BF5C6F229CA2B700DDAD6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BF5C78229CA2B700DDAD6E /* MeuMetroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BF5C7A229CA2B700DDAD6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BF5C83229CA2B700DDAD6E /* MeuMetroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15BF5C75229CA2B700DDAD6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15BF5C5E229CA2B500DDAD6E /* MeuMetro */;
+			targetProxy = 15BF5C74229CA2B700DDAD6E /* PBXContainerItemProxy */;
+		};
+		15BF5C80229CA2B700DDAD6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15BF5C5E229CA2B500DDAD6E /* MeuMetro */;
+			targetProxy = 15BF5C7F229CA2B700DDAD6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15BF5C66229CA2B500DDAD6E /* StatusLineOfficial.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15BF5C67229CA2B500DDAD6E /* Base */,
+			);
+			name = StatusLineOfficial.storyboard;
+			sourceTree = "<group>";
+		};
+		15BF5C6B229CA2B600DDAD6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15BF5C6C229CA2B600DDAD6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15BF5C85229CA2B700DDAD6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://meumetro.herokuapp.com";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15BF5C86229CA2B700DDAD6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://meumetro.herokuapp.com";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15BF5C88229CA2B700DDAD6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6965B52B57BC24C0F9AEDF48 /* Pods-MeuMetro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6RC2Z83S2;
+				INFOPLIST_FILE = MeuMetro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meumetro.MeuMetro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15BF5C89229CA2B700DDAD6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B660E21691FEEF5BE1F2CAB6 /* Pods-MeuMetro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6RC2Z83S2;
+				INFOPLIST_FILE = MeuMetro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meumetro.MeuMetro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15BF5C8B229CA2B700DDAD6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A938F17C3AD03514C2999F /* Pods-MeuMetroTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6RC2Z83S2;
+				INFOPLIST_FILE = MeuMetroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meumetro.MeuMetroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeuMetro.app/MeuMetro";
+			};
+			name = Debug;
+		};
+		15BF5C8C229CA2B700DDAD6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6CAF4EE6F3993ECE53B02C7 /* Pods-MeuMetroTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6RC2Z83S2;
+				INFOPLIST_FILE = MeuMetroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meumetro.MeuMetroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeuMetro.app/MeuMetro";
+			};
+			name = Release;
+		};
+		15BF5C8E229CA2B700DDAD6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17FA7252C7289C7D74F4A93 /* Pods-MeuMetroUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6RC2Z83S2;
+				INFOPLIST_FILE = MeuMetroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meumetro.MeuMetroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeuMetro;
+			};
+			name = Debug;
+		};
+		15BF5C8F229CA2B700DDAD6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2714434C4C3B78E30047DDC1 /* Pods-MeuMetroUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6RC2Z83S2;
+				INFOPLIST_FILE = MeuMetroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meumetro.MeuMetroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeuMetro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15BF5C5A229CA2B500DDAD6E /* Build configuration list for PBXProject "MeuMetro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BF5C85229CA2B700DDAD6E /* Debug */,
+				15BF5C86229CA2B700DDAD6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BF5C87229CA2B700DDAD6E /* Build configuration list for PBXNativeTarget "MeuMetro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BF5C88229CA2B700DDAD6E /* Debug */,
+				15BF5C89229CA2B700DDAD6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BF5C8A229CA2B700DDAD6E /* Build configuration list for PBXNativeTarget "MeuMetroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BF5C8B229CA2B700DDAD6E /* Debug */,
+				15BF5C8C229CA2B700DDAD6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BF5C8D229CA2B700DDAD6E /* Build configuration list for PBXNativeTarget "MeuMetroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BF5C8E229CA2B700DDAD6E /* Debug */,
+				15BF5C8F229CA2B700DDAD6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15BF5C57229CA2B500DDAD6E /* Project object */;
+}
