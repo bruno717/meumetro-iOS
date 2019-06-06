@@ -156,10 +156,10 @@
 		157F6480229D876200DADC4C /* StatusLineOfficial */ = {
 			isa = PBXGroup;
 			children = (
-				B689B94722A479E4008971A4 /* Interactor */,
 				B689B93B22A4475C008971A4 /* Router */,
 				157F649A229F39C600DADC4C /* DataManagers */,
 				157F648E229EEC4B00DADC4C /* Protocols */,
+				B689B94722A479E4008971A4 /* Interactor */,
 				157F648B229EEBB300DADC4C /* Presenter */,
 				157F6481229D879100DADC4C /* View */,
 			);
