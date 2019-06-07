@@ -25,12 +25,12 @@ final class StatusLineOfficialPresenter: StatusLineOfficialPresenterProtocol {
 
     func loadStatusLinesOfficial() {
         interactor.getLinesStatusOfficial()
-        .observeOn(MainScheduler.instance)
-        .subscribe(onSuccess: { response in
-            self.view.showStatusLines(lines: response)
-        }, onError: { error in
-            print("Erro!")
-        })
-        .disposed(by: disposeBag)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onSuccess: { response in
+                self.view.showStatusLines(lines: response)
+            }, onError: { error in
+                print("Erro!")
+            })
+            .disposed(by: disposeBag)
     }
 }

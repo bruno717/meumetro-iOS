@@ -26,8 +26,8 @@ class StatusLineOfficialCell: UITableViewCell, NibReusable {
         // Configure the view for the selected state
     }
     
-    func setup(item: LineDecodable) {
+    func setup(item: Line) {
         labelLineName.text = item.name
-        labelStatusLine.text = item.situation
+        labelStatusLine.text = item.status
     }
 }

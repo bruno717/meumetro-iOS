@@ -12,7 +12,7 @@ class StatusLineOfficialViewController: UIViewController  {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var items: [LineDecodable] = []
+    private var items: [Line] = []
     
     var presenter: StatusLineOfficialPresenterProtocol!
     
@@ -52,7 +52,7 @@ extension StatusLineOfficialViewController: UITableViewDataSource {
 
 extension StatusLineOfficialViewController: StatusLineOfficialViewProtocol {
     
-    func showStatusLines(lines: [LineDecodable]) {
+    func showStatusLines(lines: [Line]) {
         items.removeAll()
         items.append(contentsOf: lines)
         tableView.reloadData()

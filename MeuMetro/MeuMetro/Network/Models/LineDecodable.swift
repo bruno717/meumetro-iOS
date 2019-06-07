@@ -16,8 +16,4 @@ class LineDecodable: Decodable {
     var description = String()
     var type: String? = nil
     var modificationDate = String()
-    
-    init() {
-        // Create a default object
-    }
 }

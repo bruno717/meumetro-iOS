@@ -12,7 +12,7 @@ import RxSwift
 // MARK: - View
 protocol StatusLineOfficialViewProtocol: class {
     
-    func showStatusLines(lines: [LineDecodable])
+    func showStatusLines(lines: [Line])
     
 }
 
@@ -28,10 +28,10 @@ protocol StatusLineOfficialRouterProtocol: class {
 
 // MARK: - Interactor
 protocol StatusLineOfficialInteractorProtocol: class {
-    func getLinesStatusOfficial() -> Single<[LineDecodable]>
+    func getLinesStatusOfficial() -> Single<[Line]>
 }
 
 // MARK: - DataManager
 protocol StatusLineOfficialRemoteDataManagerProtocol: class {
-    func getLinesStatusOfficial() -> Single<[LineDecodable]>
+    func getLinesStatusOfficial() -> Single<[Line]>
 }

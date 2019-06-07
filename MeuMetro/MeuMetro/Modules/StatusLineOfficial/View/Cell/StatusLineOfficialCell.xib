@@ -19,9 +19,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuX-9Z-oqQ">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuX-9Z-oqQ" customClass="CardView" customModule="MeuMetro" customModuleProvider="target">
                         <rect key="frame" x="16" y="15" width="288" height="83.5"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-7S-AWk" userLabel="Left View">
+                                <rect key="frame" x="0.0" y="0.0" width="3" height="83.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="3" id="E3g-vq-OUE"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linha 1 Azul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QB-tM-4Sp">
                                 <rect key="frame" x="16" y="16" width="91" height="16"/>
                                 <constraints>
@@ -47,17 +54,49 @@
                                     <constraint firstAttribute="width" constant="35" id="zGw-e4-IKw"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24d-q9-nzR" userLabel="Right View">
+                                <rect key="frame" x="282" y="0.0" width="6" height="83.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="mzz-3Q-Nf4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="24d-q9-nzR" secondAttribute="trailing" id="6Ih-Fz-Ua2"/>
                             <constraint firstAttribute="height" constant="83.5" id="7Uj-nG-9za"/>
+                            <constraint firstItem="9sb-7S-AWk" firstAttribute="top" secondItem="VuX-9Z-oqQ" secondAttribute="top" id="IRt-ft-P9s"/>
+                            <constraint firstAttribute="bottom" secondItem="9sb-7S-AWk" secondAttribute="bottom" id="MgH-c9-9wH"/>
+                            <constraint firstAttribute="bottom" secondItem="24d-q9-nzR" secondAttribute="bottom" id="Nld-Ay-4fA"/>
                             <constraint firstItem="Qfr-vp-XKk" firstAttribute="top" secondItem="VuX-9Z-oqQ" secondAttribute="top" constant="16" id="PHJ-mW-jyA"/>
                             <constraint firstItem="3QB-tM-4Sp" firstAttribute="leading" secondItem="VuX-9Z-oqQ" secondAttribute="leading" constant="16" id="PlA-X7-3yS"/>
                             <constraint firstAttribute="trailing" secondItem="Qfr-vp-XKk" secondAttribute="trailing" constant="16" id="c3i-Wu-bTK"/>
                             <constraint firstItem="GZ1-oC-Nog" firstAttribute="leading" secondItem="VuX-9Z-oqQ" secondAttribute="leading" constant="16" id="gYZ-gK-Sog"/>
+                            <constraint firstItem="24d-q9-nzR" firstAttribute="top" secondItem="VuX-9Z-oqQ" secondAttribute="top" id="oHw-Vf-3gL"/>
                             <constraint firstAttribute="bottom" secondItem="GZ1-oC-Nog" secondAttribute="bottom" constant="16" id="p3r-zo-DS4"/>
                             <constraint firstItem="3QB-tM-4Sp" firstAttribute="top" secondItem="VuX-9Z-oqQ" secondAttribute="top" constant="16" id="usJ-LB-soD"/>
+                            <constraint firstItem="9sb-7S-AWk" firstAttribute="leading" secondItem="VuX-9Z-oqQ" secondAttribute="leading" id="wpe-Hm-Reb"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetHeight">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
@@ -74,7 +113,7 @@
                 <outlet property="labelLineName" destination="3QB-tM-4Sp" id="eu6-jC-UsU"/>
                 <outlet property="labelStatusLine" destination="Qfr-vp-XKk" id="74y-41-fTx"/>
             </connections>
-            <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
+            <point key="canvasLocation" x="40.579710144927539" y="19.419642857142858"/>
         </tableViewCell>
     </objects>
     <resources>

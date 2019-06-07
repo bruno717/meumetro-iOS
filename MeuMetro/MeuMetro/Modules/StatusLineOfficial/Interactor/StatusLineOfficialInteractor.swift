@@ -17,7 +17,7 @@ class StatusLineOfficialInteractor: StatusLineOfficialInteractorProtocol {
         self.remote = remote
     }
     
-    func getLinesStatusOfficial() -> Single<[LineDecodable]> {
+    func getLinesStatusOfficial() -> Single<[Line]> {
         return remote.getLinesStatusOfficial()
     }
 

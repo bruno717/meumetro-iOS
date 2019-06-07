@@ -17,8 +17,13 @@ final class StatusLineOfficialRemoteDataManager: StatusLineOfficialRemoteDataMan
         self.service = service
     }
     
-    func getLinesStatusOfficial() -> Single<[LineDecodable]> {
+    func getLinesStatusOfficial() -> Single<[Line]> {
         return service.getLinesStatusOfficial()
+            .map { lineDecodableList in
+                return lineDecodableList.map { lineDecodable in
+                    return Line(lineDecodable: lineDecodable)
+                }
+            }
     }
     
 }
