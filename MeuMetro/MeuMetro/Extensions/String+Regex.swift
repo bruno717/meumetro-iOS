@@ -27,4 +27,9 @@ extension String {
         }
     }
     
+    func removeAccents(text: String) -> String {
+        let textWithoutAccents = text.folding(options: .diacriticInsensitive, locale: .current)
+        return textWithoutAccents
+    }
+    
 }

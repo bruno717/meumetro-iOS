@@ -97,7 +97,7 @@ final class StyleBuilder {
         elements.compactMap{ $0 }
             .forEach {
                 setFont(stylable: $0)
-                setTextColor(stylable: $0)
+//                setTextColor(stylable: $0)
                 setTextAlignment(stylable: $0)
         }
     }

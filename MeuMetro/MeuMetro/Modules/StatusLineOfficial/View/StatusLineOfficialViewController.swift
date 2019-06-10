@@ -45,7 +45,7 @@ extension StatusLineOfficialViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: StatusLineOfficialCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.setup(item: items[indexPath.row])
+        cell.setup(line: items[indexPath.row])
         return cell
     }
 }

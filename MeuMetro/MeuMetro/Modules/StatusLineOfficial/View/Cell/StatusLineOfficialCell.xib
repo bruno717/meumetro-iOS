@@ -109,9 +109,12 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cardView" destination="VuX-9Z-oqQ" id="7si-BT-xrQ"/>
                 <outlet property="imageViewIcon" destination="GZ1-oC-Nog" id="p80-bR-KwO"/>
                 <outlet property="labelLineName" destination="3QB-tM-4Sp" id="eu6-jC-UsU"/>
                 <outlet property="labelStatusLine" destination="Qfr-vp-XKk" id="74y-41-fTx"/>
+                <outlet property="leftView" destination="9sb-7S-AWk" id="w1y-uL-PWf"/>
+                <outlet property="rightView" destination="24d-q9-nzR" id="OOj-ZS-LcF"/>
             </connections>
             <point key="canvasLocation" x="40.579710144927539" y="19.419642857142858"/>
         </tableViewCell>
