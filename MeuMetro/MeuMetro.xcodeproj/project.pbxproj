@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0C52975EC5107B68F9FE0318 /* Pods_MeuMetro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7056C82B6BFF0A9BA6022F8D /* Pods_MeuMetro.framework */; };
+		1553945922AEA5F80055EF25 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1553945822AEA5F80055EF25 /* Localizable.strings */; };
+		1553945B22AEA7160055EF25 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553945A22AEA7160055EF25 /* Strings.swift */; };
+		1553945F22AEC9570055EF25 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553945E22AEC9570055EF25 /* Colors.swift */; };
+		1553946122AED2380055EF25 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553946022AED2380055EF25 /* UIColor+Hex.swift */; };
+		1553946422AF074E0055EF25 /* LineType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553946322AF074E0055EF25 /* LineType.swift */; };
 		155CCFE022AAC1CF00710B56 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155CCFDF22AAC1CF00710B56 /* Line.swift */; };
 		155CCFE322AB05FC00710B56 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155CCFE222AB05FC00710B56 /* CardView.swift */; };
 		155CCFE722AB168B00710B56 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155CCFE622AB168B00710B56 /* Style.swift */; };
@@ -42,6 +47,7 @@
 		157F64D822A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64D722A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift */; };
 		157F64DD22A19C5A00DADC4C /* NetworkSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64DC22A19C5A00DADC4C /* NetworkSetup.swift */; };
 		157F64DF22A19C8E00DADC4C /* AppDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F64DE22A19C8E00DADC4C /* AppDateFormatter.swift */; };
+		158ACEAF22B80EE400B13D9D /* CompanyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ACEAE22B80EE400B13D9D /* CompanyType.swift */; };
 		15BF5C63229CA2B500DDAD6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF5C62229CA2B500DDAD6E /* AppDelegate.swift */; };
 		15BF5C65229CA2B500DDAD6E /* StatusLineOfficialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF5C64229CA2B500DDAD6E /* StatusLineOfficialViewController.swift */; };
 		15BF5C68229CA2B500DDAD6E /* StatusLineOfficial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BF5C66229CA2B500DDAD6E /* StatusLineOfficial.storyboard */; };
@@ -49,6 +55,10 @@
 		15BF5C6D229CA2B600DDAD6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BF5C6B229CA2B600DDAD6E /* LaunchScreen.storyboard */; };
 		15BF5C78229CA2B700DDAD6E /* MeuMetroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF5C77229CA2B700DDAD6E /* MeuMetroTests.swift */; };
 		15BF5C83229CA2B700DDAD6E /* MeuMetroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF5C82229CA2B700DDAD6E /* MeuMetroUITests.swift */; };
+		15D3D64322EB79C1007EA0A1 /* UILabel+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3D64222EB79C1007EA0A1 /* UILabel+Height.swift */; };
+		15F28E0322C17F3700209AA0 /* StatusCompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F28E0122C17F3700209AA0 /* StatusCompanyCell.swift */; };
+		15F28E0422C17F3700209AA0 /* StatusCompanyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F28E0222C17F3700209AA0 /* StatusCompanyCell.xib */; };
+		15F28E0622C1892200209AA0 /* StatusCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F28E0522C1892200209AA0 /* StatusCellType.swift */; };
 		6A02B863C1F1789BFBF778CB /* Pods_MeuMetroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7003B51E1A10C4A4A691B2 /* Pods_MeuMetroTests.framework */; };
 		B67DEF1B22A47A580054BF2E /* StatusLineOfficialInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DEF1A22A47A580054BF2E /* StatusLineOfficialInteractor.swift */; };
 		B689B93D22A44778008971A4 /* StatusLineOfficialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689B93C22A44778008971A4 /* StatusLineOfficialRouter.swift */; };
@@ -76,6 +86,11 @@
 
 /* Begin PBXFileReference section */
 		0A7003B51E1A10C4A4A691B2 /* Pods_MeuMetroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuMetroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1553945822AEA5F80055EF25 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1553945A22AEA7160055EF25 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		1553945E22AEC9570055EF25 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1553946022AED2380055EF25 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		1553946322AF074E0055EF25 /* LineType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineType.swift; sourceTree = "<group>"; };
 		155CCFDF22AAC1CF00710B56 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		155CCFE222AB05FC00710B56 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		155CCFE622AB168B00710B56 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
@@ -110,6 +125,7 @@
 		157F64D722A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequenceType+IgnoreElements.swift"; sourceTree = "<group>"; };
 		157F64DC22A19C5A00DADC4C /* NetworkSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSetup.swift; sourceTree = "<group>"; };
 		157F64DE22A19C8E00DADC4C /* AppDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDateFormatter.swift; sourceTree = "<group>"; };
+		158ACEAE22B80EE400B13D9D /* CompanyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyType.swift; sourceTree = "<group>"; };
 		15BF5C5F229CA2B500DDAD6E /* MeuMetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuMetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BF5C62229CA2B500DDAD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15BF5C64229CA2B500DDAD6E /* StatusLineOfficialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineOfficialViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +139,10 @@
 		15BF5C7E229CA2B700DDAD6E /* MeuMetroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuMetroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BF5C82229CA2B700DDAD6E /* MeuMetroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuMetroUITests.swift; sourceTree = "<group>"; };
 		15BF5C84229CA2B700DDAD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D3D64222EB79C1007EA0A1 /* UILabel+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Height.swift"; sourceTree = "<group>"; };
+		15F28E0122C17F3700209AA0 /* StatusCompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCompanyCell.swift; sourceTree = "<group>"; };
+		15F28E0222C17F3700209AA0 /* StatusCompanyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusCompanyCell.xib; sourceTree = "<group>"; };
+		15F28E0522C1892200209AA0 /* StatusCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCellType.swift; sourceTree = "<group>"; };
 		2714434C4C3B78E30047DDC1 /* Pods-MeuMetroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuMetroUITests.release.xcconfig"; path = "Target Support Files/Pods-MeuMetroUITests/Pods-MeuMetroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		581E76DF0CEE54AA89A8F655 /* Pods_MeuMetroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuMetroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6965B52B57BC24C0F9AEDF48 /* Pods-MeuMetro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuMetro.debug.xcconfig"; path = "Target Support Files/Pods-MeuMetro/Pods-MeuMetro.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +185,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1553945C22AEC6960055EF25 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				1553945A22AEA7160055EF25 /* Strings.swift */,
+				1553945822AEA5F80055EF25 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		1553945D22AEC80E0055EF25 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				1553945E22AEC9570055EF25 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		1553946222AF070B0055EF25 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1553946322AF074E0055EF25 /* LineType.swift */,
+				158ACEAE22B80EE400B13D9D /* CompanyType.swift */,
+				15F28E0522C1892200209AA0 /* StatusCellType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		155CCFDE22AAC1AA00710B56 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +231,8 @@
 		155CCFE422AB165B00710B56 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1553945D22AEC80E0055EF25 /* Colors */,
+				1553945C22AEC6960055EF25 /* Strings */,
 				155CCFE522AB167C00710B56 /* Styles */,
 			);
 			path = Resources;
@@ -228,6 +277,8 @@
 			children = (
 				157F6487229DB6BC00DADC4C /* StatusLineOfficialCell.swift */,
 				157F6488229DB6BC00DADC4C /* StatusLineOfficialCell.xib */,
+				15F28E0122C17F3700209AA0 /* StatusCompanyCell.swift */,
+				15F28E0222C17F3700209AA0 /* StatusCompanyCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -357,6 +408,8 @@
 				B689B94322A44B11008971A4 /* UIKit */,
 				157F64D622A0743E00DADC4C /* RxSwift */,
 				157F64C322A0518100DADC4C /* String+Regex.swift */,
+				1553946022AED2380055EF25 /* UIColor+Hex.swift */,
+				15D3D64222EB79C1007EA0A1 /* UILabel+Height.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -437,6 +490,7 @@
 				157F64C222A0515B00DADC4C /* Extensions */,
 				157F64A122A0202200DADC4C /* NetworkLibrary */,
 				155CCFDE22AAC1AA00710B56 /* Models */,
+				1553946222AF070B0055EF25 /* Enums */,
 				157F6494229F21FA00DADC4C /* Utils */,
 				157F6492229F094A00DADC4C /* Modules */,
 				157F6491229F092900DADC4C /* Network */,
@@ -619,6 +673,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1553945922AEA5F80055EF25 /* Localizable.strings in Resources */,
+				15F28E0422C17F3700209AA0 /* StatusCompanyCell.xib in Resources */,
 				157F648A229DB6BC00DADC4C /* StatusLineOfficialCell.xib in Resources */,
 				15BF5C6D229CA2B600DDAD6E /* LaunchScreen.storyboard in Resources */,
 				15BF5C6A229CA2B600DDAD6E /* Assets.xcassets in Resources */,
@@ -744,12 +800,14 @@
 			files = (
 				157F64B222A022F000DADC4C /* Endpoint.swift in Sources */,
 				157F6496229F221E00DADC4C /* NibReusable.swift in Sources */,
+				1553945B22AEA7160055EF25 /* Strings.swift in Sources */,
 				157F6499229F289E00DADC4C /* LineDecodable.swift in Sources */,
 				15BF5C65229CA2B500DDAD6E /* StatusLineOfficialViewController.swift in Sources */,
 				157F64AA22A0212F00DADC4C /* APIControllerProtocol.swift in Sources */,
 				157F6489229DB6BC00DADC4C /* StatusLineOfficialCell.swift in Sources */,
 				15BF5C63229CA2B500DDAD6E /* AppDelegate.swift in Sources */,
 				155CCFE722AB168B00710B56 /* Style.swift in Sources */,
+				158ACEAF22B80EE400B13D9D /* CompanyType.swift in Sources */,
 				B689B93D22A44778008971A4 /* StatusLineOfficialRouter.swift in Sources */,
 				157F64BA22A035E100DADC4C /* Encodable+Parameters.swift in Sources */,
 				157F64D822A0746700DADC4C /* PrimitiveSequenceType+IgnoreElements.swift in Sources */,
@@ -762,11 +820,17 @@
 				157F64C822A05F4700DADC4C /* StatusLineService.swift in Sources */,
 				B689B94522A44B1F008971A4 /* UIStoryboard+Instantiate.swift in Sources */,
 				157F64BF22A0503500DADC4C /* ServicePort.swift in Sources */,
+				1553946122AED2380055EF25 /* UIColor+Hex.swift in Sources */,
 				157F64CF22A0664D00DADC4C /* APIController.swift in Sources */,
+				15D3D64322EB79C1007EA0A1 /* UILabel+Height.swift in Sources */,
 				157F64A422A0206D00DADC4C /* RequestManager.swift in Sources */,
+				15F28E0322C17F3700209AA0 /* StatusCompanyCell.swift in Sources */,
 				155CCFE022AAC1CF00710B56 /* Line.swift in Sources */,
+				1553946422AF074E0055EF25 /* LineType.swift in Sources */,
+				1553945F22AEC9570055EF25 /* Colors.swift in Sources */,
 				157F64B622A02FCE00DADC4C /* ErrorParser.swift in Sources */,
 				155CCFEB22AB175800710B56 /* Stylable.swift in Sources */,
+				15F28E0622C1892200209AA0 /* StatusCellType.swift in Sources */,
 				157F64D522A071AC00DADC4C /* DataRequest+RxSwift.swift in Sources */,
 				157F64C422A0518100DADC4C /* String+Regex.swift in Sources */,
 				157F64C122A0505C00DADC4C /* ServiceVersion.swift in Sources */,

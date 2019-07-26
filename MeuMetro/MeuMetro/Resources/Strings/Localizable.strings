@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  MeuMetro
+
+  Created by Bruno Oliveira on 10/06/19.
+  Copyright © 2019 meu metro. All rights reserved.
+*/
+
+// MARK: - Date Format
+dateStatusLine = "dd/MM 'às' HH'h'mm";
+
+// MARK: - Status Line Official
+statusNormalOperation = "Operação normal";
+statusParalyzedOperation = "Paralisada";
+statusFinishOperation = "Encerrada";
+companyMetro = "Metrô";
+companyCptm = "CPTM";
